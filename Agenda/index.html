@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agendamento de Consultas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Consultas</h1>
+        <form id="appointment-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" required>
+
+            <button type="submit">Agendar Consulta</button>
+        </form>
+
+        <h2>Consultas Agendadas</h2>
+        <table id="appointments-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As consultas agendadas aparecerão aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
